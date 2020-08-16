@@ -1,12 +1,220 @@
 <!DOCTYPE html>
-<html lang="en-us">
-<html>
-<Head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Ron Gould</title>
+    <link rel="icon" type="image/png" href="./assets/favicon_io/favicon-16x16.png" />
+   
+    <link rel="stylesheet" href="./assets/css/style.css" />  
 
-</Head>
+</head>
+
 <body>
+    <!--navigation-->
+    <header>
+        <h1>
+            <a href="/">Ron Gould</a>
+        </h1>
+<nav>
+            <!-- Unordered list element -->
+   <ul>
+    <!-- List item element-->
+     <li>
+      <!-- Anchor element -->
+       <a href="#bio">BIO</a>
+     </li>
+  
+     <!-- List item element-->
+     <li>
+        <!-- Anchor element -->  
+       <a href="#languages-learned">Languages Learned</a>
+     </li>
+  
+ 
+     <!-- List item element-->
+     <li>
+ 
+        <!-- Anchor element -->
+        <a href="#my-sites">My Sites</a>
+     </li>
+ 
+     <!-- List item element-->
+     <li>
+      <!-- Anchor element -->
+        <a href="#reach-out">Contact Info</a>
+     </li>
+   </ul>
+</nav>
+    </header>
 
-<h1>Hello World!</h1>
+    <!--hero/jumbotron-->
+    <section class="hero">
+        <div class="hero-form">
+            <h3>Get Started Today</h3>
+            <p>Fill out this form and one of our trainers will schedule a consult</p>
+            <!--add form element-->
+            <form>
+                <label for="name">Enter full name:</label>
+            </form>
+            <input type="text" placeholder="Your Name" name="name" id="name" class="form-input">
+
+            <label for="email">Enter email address:</label>
+            <input type="email" placeholder="Email Address" name="email" id="email" class="form-input">
+
+            <label for="phone">Enter a telephone number:</label>
+            <input type="tel" placeholder="Phone Number" name="phone" id="phone" class="form-input">
+                <p>
+                  Have you worked out with a trainer before?
+                  <input type="radio" name="trainer-confirm" id="trainer-yes" />
+                  <label for="trainer-yes">Yes</label>
+                  <input type="radio" name="trainer-confirm" id="trainer-no" />
+                  <label for="trainer-no">No</label>
+                </p>
+                  <p>
+                    <label for="checkbox" >
+                      I acknowledge that I am at least 18 years of age.
+                    </label>
+                    <input type="checkbox" name="age-confirm" id="checkbox" />
+                  </p>
+                  <button type="submit">
+                    Get running!
+                  </button>
+            </form>
+        
+        </div>
+    </section>
+    <!-- end hero -->
+
+   
+   <!-- "bio" section -->
+<section id="bio" class="intro">
+    <h2 class="section-title primary-border">What We Do</h2>
+    <p>
+    My Name is Ron Gould. I was born in Cocoa Beach, Florida and currently reside in Merritt Island, Florida.
+      I am Married with 2 boys 5 and 7.  In my past life I was a professional tennis player and coach.  I now
+      sell Real Estate in Florida.  I am currently exploring a career change into full stack web development and
+      I am currently learning all the programs I can.  As I learn the languages I will add them to the list below.
+        If you have any suggestions on what programming languages to learn next please feel free to reach out with suggestions!
+    </p>
+  </section>
+  
+  <!-- "what you do" section -->
+  <section id="what-you-do" class="steps">
+    <h2 class="section-title secondary-border">What You Do</h2> 
+  
+    <div>
+        <!-- insert this img element -->
+        <img src="./assets/images/step-1.svg" alt="" />
+        <h3>Step 1: <span>Fill Out the Form Above.</span></h3>
+        <p>You're already here, so why not?</p>
+    </div>
+  
+    <div>
+        <!-- insert this img element -->
+        <img src="./assets/images/step-2.svg" alt="" />
+      <h3>Step 2: <span>Consult with One of Our Trainers.</span></h3>
+      <p>Are you here to build muscle, lose weight, or just feel good?</p>
+    </div>
+  
+    <div>
+        <!-- insert this img element -->
+        <img src="./assets/images/step-3.svg" alt="" />
+      <h3>Step 3: <span>Get Running.</span></h3>
+      <p>Hit the ground running (literally) once your trainer lays out your plan.</p>
+    </div>
+  
+    <div><!-- insert this img element -->
+        <img src="./assets/images/step-4.svg" alt="" />
+      <h3>Step 4: <span>See Results.</span></h3>
+      <p>Bi-weekly checkins with your trainer will keep you focused</p>
+    </div>
+  </section>
+
+        <!--"meet the trainers" section-->
+    <section id="your-trainers" class="trainers"> 
+        <h2 class="section-title primary-border">Meet The Trainers</h2>
+        <article class="trainer">
+            <img src="./assets/images/trainer-1.jpg" alt="Arron Stephens in his workout clothes, ready to pump iron" />
+            <div class="trainer-bio text-left">
+                <h3>Arron Stephens</h3>
+                <h4>Speed / Strength</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum quasi nemo vel dolores temporibus optio, facere ea eveniet, repellat excepturi sit minus atque voluptas quaerat, assumenda et! Veniam, fuga pariatur?
+                </p>
+            </div>
+        
+        <!-- second trainer bio -->
+        </article>
+        <article class="trainer">
+            <div class="trainer-bio text-right">
+                <h3>Joanna Gill</h3>
+                <h4>Endurance</h4>
+                <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias debitis cum ducimus rerum rem nobis. Accusantium tenetur aliquid distinctio nobis maxime doloribus tempora fuga ex. Deserunt, in? Nemo, vero ducimus.
+                </p>
+            </div>
+            <img src="./assets/images/trainer-2.jpg" alt="Joanna Gill cooling off after a workoult" />    
+        </article>
+
+        <!-- third trainer bio -->
+        <article class="trainer">
+            <img src="./assets/images/trainer-3.jpg" alt="Harry Smith wearing a headband and lifting comically small pink weights" />
+            <div class="trainer-bio text-left">
+                <h3>Harry "the Headband" Smith</h3>
+                <h4>Strength</h4>
+                <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi neque animi quo cupiditate commodi saepe culpa sed
+                 itaque velit maiores optio dolorem excepturi aperiam dolores, voluptatibus suscipit amet quis repellat!
+                </p>
+            </div>
+        </article>
+    </section>
+
+    
+
+
+    <!--"reach out" section-->
+    <section id="reach-out" class="reach">
+      <h2 class="section-title secondary-border">Reach Out</h2>
+        <div class="contact-info">
+          <!--frame for the map-->
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3509.488836526622!2d-80.67584388505632!3d28.40450310111582!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e0a8fe8e2f07c3%3A0xecd00418adc28a47!2s1296%20Potomac%20Dr%2C%20Merritt%20Island%2C%20FL%2032952!5e0!3m2!1sen!2sus!4v1596811018732!5m2!1sen!2sus" 
+          width="400" 
+          height="400" 
+          frameborder="0" 
+          style="border:0;" 
+          allowfullscreen="" 
+          aria-hidden="false" 
+          tabindex="0">
+          </iframe>
+        
+         <div>
+            <h3>Ron Gould</h3>
+            <p>
+              Any questions or concerns before signing up?
+              <br />
+              Let us know and we'll be happy to talk to you!
+            </p>
+            <address>
+              1296 Potomac Dr <br/>
+              Merritt Island, FL <br/>
+              32952<br />
+              P: 321.Sold.123 (321-765-3123)<br />
+              E: <a href="mailto:Ron.Gould@gmail.com">Ron.Gould@gmail.com</a>
+            </address>
+          </div>
+        </div>
+
+    </section>
+
+    <!--footer-->    
+    <footer>
+        <h2>❤️ Made with love by Ron Gould.</h2>
+        <div>
+            <a href="./privacy-policy.html">Read Our Privacy Policy</a><br />
+            2020 Ron Gould
+          </div>
+    </footer>
+
 
 </body>
 </html>
