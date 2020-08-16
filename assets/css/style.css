@@ -4,10 +4,18 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+  } 
+
+  :root {
+    --white: #F9EDED;
+    --blue: #00F;
+    --red: red;
+    --yellow: #f9fd02;
+    --dark: #181B26;
   }
 
 body {
-    color: #39a6b2;
+    color: var(--blue);
     font-family: Helvetica, Arial, sans-serif;
     }
 
@@ -15,25 +23,26 @@ body {
 /* apply styles to <header> */
 
 header {
+    display: flex;
     padding: 20px 35px;
-    background-color: #39a6b2;
-    }
+    background-color: var(--blue);
+    justify-content: space-between;
+    flex-wrap: wrap;  
+  }
 
     header h1 {
         font-weight: bold;
         font-size: 36px;
-        color: #fce138;
+        color: var(--white);
         margin: 0;
-        display: inline;
      }
 
      header a {
-        text-decoration: none;
-        color: #fce138;
+        color: var(--white);
       }
 
       header nav {
-        float: right;
+        display: flex;
         margin: 7px 0;
       }
 
@@ -42,20 +51,21 @@ header {
       }
 
       header nav ul li a {
-          margin: 0 30px;
+          display: inline-table;
           font-weight: lighter;
           font-size: 22px;
+
       }
       
       footer {
-          background: #fce138;
+          background: var(--yellow);
           width: 100%;
           padding: 40px 35px;
       }
       
       footer h2 {
         display: inline;
-        color: #024e76;
+        color:var(--red);
         font-size: 30px;
         margin: 0;
       }
@@ -67,7 +77,7 @@ header {
       }
 
       footer a {
-        color: #024e76;
+        color:var(--red);
       }
 
       section {
@@ -76,61 +86,30 @@ header {
 
        /* Hero Style Start */
         .hero {
-            background-image: url("../images/hero-bg.jpg");
+            background-image: url(../Images/RonGouldHero.jpeg);
+
             height: 600px;
             background-size: cover;
             background-position: center;
             position: relative;
          }
 
-               .hero-form {
-            background-color: #fce138;
-            padding: 20px;
-            width: 500px;
-            color: #024e76;
-            border-style: solid;
-            border-width: 3px;
-            border-color: #024e76;
-            position: absolute;
-            bottom: 120px;
-            right: 140px;
-          }
-          
-          .hero-form h3 {
-            font-size: 24px;
-            margin: 0;
-          }
-          
-          .hero-form p {
-            margin: 5px 0 15px 0;
-          }
-          
-          .form-input {
-            border: 1px solid #024e76;
-            display: block;
-            padding: 7px 15px;
-            font-size: 16px;
-            color: #024e76;
-            width: 100%;
-            margin-bottom: 15px;
-          }
+         .hero-form {
+           background-color: var(--blue);
+           height: auto;
+           width: fit-content;
+           padding: 5px;
+           color: var(--white);
 
-          .hero-form label {
-            margin: 0 5px;
-          }
+         }
 
-           .hero-form button {
-              background-color: #024e76;
-              color: #fce138;
-              border: none;
-              padding: 10px 20px;
-              font-size: 16px;
-            }
+           
+          
              /* Hero Style End */
 
              .section-title {
                 font-size: 55px;
-                color: #024e76;
+                color:;
                 margin-bottom: 35px;
                 padding: 0 100px 20px 100px;
                 display: inline-block;
@@ -138,11 +117,11 @@ header {
               }
               
               .primary-border {
-                border-color: #fce138;
+                border-color: var(--white);
               }
               
               .secondary-border {
-                border-color: #39a6b2;
+                border-color: var(--blue);
               }
 
              /* what we do style start*/
@@ -155,7 +134,7 @@ header {
              .intro p {
                 margin: 0 auto;
                 line-height: 1.7;
-                color: #39a6b2;
+                color: var(--blue);
                 width: 80%;
                 font-size: 20px;
               }
@@ -166,7 +145,7 @@ header {
             
                 .steps { 
                     text-align: center;
-                    background: #fce138;
+                    background: var(--yellow);
                   }
                   
             
@@ -180,13 +159,13 @@ header {
                 }
 
                 .steps h3 {
-                    color: #024e76;
+                    color:var(--red);
                     font-size: 46px;
                     margin-top: 10px;
                 }
 
                 .steps p {
-                    color: #39a6b2;
+                    color: var(--blue);
                     font-size: 23px;
                 }
 
@@ -205,8 +184,8 @@ header {
 .trainer {
     width: 900px;
     margin: 0 auto 30px auto;
-    background: #024e76;
-    color: #fce138;
+    background:var(--red);
+    color: var(--white);
     overflow: auto;
     }
 
@@ -252,13 +231,13 @@ header {
 
 .reach {
   text-align: center;
-  background: #024e76;
+  background:var(--red);
   
 }
 
 
 .reach h2 {
-  color: #fce138;
+  color: var(--white);
 }
 
 .contact-info iframe {
@@ -276,7 +255,7 @@ header {
 }
 
 .contact-info h3 {
-  color: #fce138;
+  color: var(--white);
   font-size: 32px;
 }
 
@@ -288,7 +267,7 @@ header {
 }
 
 .contact-info a {
-  color: #fce138;
+  color: var(--white);
 }
 
 /* reach-out style END */
