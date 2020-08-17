@@ -94,6 +94,7 @@ section {
   padding: 60px;
 }
 
+
 /* Hero Style Start */
 
 .hero {
@@ -120,7 +121,7 @@ section {
 
  .intro {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-wrap: wrap;
  }
 
@@ -132,7 +133,15 @@ section {
   border-right: 3px solid var(--blue);
 }
 
-              
+.section-media {
+  margin: auto;
+  color: var(--blue);
+  overflow: auto;
+  padding: 35px;
+  float: left;
+  width: 75%;
+  }    
+
 .intro p {
   margin: auto;
   line-height: 1.7;
@@ -143,63 +152,45 @@ section {
 
 /* languages learned style start*/
 .intro ul li a {
-  margin: auto;
-  line-height: 1.7;
-  color: var(--blue);
-  width: 75%;
-  font-size: 1.5vw;
-  justify-content: end;
   
+  font-size: 1.5vw;
 }
-                
-  /* BIO style end*/
-
-
-            
-                .steps { 
-                    text-align: center;
-                    background: var(--yellow);
-                  }
-                  
-            
-                .steps div {
-                    margin-bottom: 80px;
-                }  
-
-                .steps img {
-                    width: 15%;
-                    margin: 10px 0;
-                }
-
-                .steps h3 {
-                    color:var(--red);
-                    font-size: 46px;
-                    margin-top: 10px;
-                }
-
-                .steps p {
-                    color: var(--blue);
-                    font-size: 23px;
-                }
-
-                .steps span {
-                    font-size: 38px;
-                  }
-
 
 /* languages learned style end*/
 
-/* meet the sites style start*/
+/* My sites style start*/
+.sites-grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-auto-flow: dense;
+}
+
+.item-1 {
+  grid-row-end: span 2;
+  grid-column: span 2;
+}
+
+.sites-grid-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  background-color: #00F;
+}
+
 .sites {
     text-align: center;
     }
 
-.site {
-    width: 900px;
+.section-media {
     margin: 0 auto 30px auto;
-    background:var(--red);
-    color: var(--white);
+    color: var(--blue);
     overflow: auto;
+    padding: 35px;
+    float: left;
+    width: 75%;
     }
 
 .site img {
@@ -207,7 +198,7 @@ section {
     float: left;
     }    
 
-.site-bio {
+.site {
     padding: 35px;
     float: left;
     width: 65%;
